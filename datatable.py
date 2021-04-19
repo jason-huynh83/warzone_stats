@@ -46,4 +46,3 @@ def weekly_stats(username,platform):
     return df
 
 df = weekly_stats('iBHuynhing','psn')
-int(df['matchesPlayed'])

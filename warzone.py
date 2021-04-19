@@ -111,16 +111,7 @@ def squad(team,platform):
     for i in range(len(team)):
         time.sleep(1)
         df['df{}'.format(i)] = get_stats(team[i], platform[i])
-        
-    
-    timeMoving = []
-    arr = ['Match 1','Match 2','Match 3','Match 4','Match 5','Match 6','Match 7','Match 8','Match 9','Match 10',
-       'Match 11','Match 12','Match 13','Match 14','Match 15','Match 16','Match 17','Match 18','Match 19','Match 20']
-    for i in range(len(df)):
-        timeMoving.append(round(df['df{}'.format(i)]['percentTimeMoving'].mean(),2))
-    
-    
-    
+
     return df
 
 def avg_dmg(df):

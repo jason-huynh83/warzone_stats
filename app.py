@@ -1,9 +1,5 @@
-"""
-Created on Wed Jan 13 18:48:20 2021
-
-@author: Jason
-"""
 import os
+os.chdir('C:\\Users\\jason\\Documents\\code\\warzone')
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -11,7 +7,6 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import plotly.express as px
 import time
-os.chdir('C:\\Users\\jason\\Documents\\code\\warzone')
 from datatable import weekly_stats
 from warzone import *
 
@@ -583,5 +578,3 @@ def update_card_title_1(n_clicks, input1, input2):
 
 if __name__ == '__main__':
     app.run_server(port='8085')
-
-
