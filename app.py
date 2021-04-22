@@ -552,7 +552,6 @@ def team_avg(username,platform):
      State('input-2-state', 'value'),
      ])
 def update_card_title_1(n_clicks, input1, input2):
-    
     username = input1.split(', ')
     platform = input2.split(', ')
 
